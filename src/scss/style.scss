@@ -7,3 +7,27 @@ body {
 input {
     width: 100px;
 }
+
+.student__name {
+    background-image: url("img/x-circle.svg");
+    background-repeat: no-repeat;
+}
+
+.delete__student {
+    position: absolute;
+    left: -27px;
+    top: 15px;
+    cursor: pointer;
+}
+
+.student__name {
+    position: relative;
+}
+
+button {
+    height: 100% !important
+}
+
+form {
+    width: 500px !important
+}

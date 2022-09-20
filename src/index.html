@@ -8,10 +8,11 @@
     <title>Document</title>
 </head>
 <body class="bg-light">
+  <h1 class="display-6 container text-center mt-3 mb-3">Students Marks</h1>
   <table class="table container mb-2 table-hover" >
     <thead class="">
       <tr>
-        <th scope="col">#</th>
+        <th scope="col"></th>
         <th scope="col"> Math </th>
         <th scope="col">History</th>
         <th scope="col">Informatic</th>
@@ -27,10 +28,10 @@
     <tbody id="tableBody" >
     </tbody>
   </table>
-  <h1 class="display-6 container">Add new student</h1>
-  <form class="container mb-20" id="studentForm" style="margin-top: 50px;">
-    <input type="text" id="newStudent" width="200">
-    <button type="submit" class="btn btn-primary">New Student</button>
+  <h1 class="display-6 container text-center mt-3">Add new student</h1>
+  <form class="container input-group mt-3 mb-3" id="studentForm">
+    <input type="text" class="form-control mb-3" id="newStudent"  aria-describedby="button-addon2">
+    <button type="submit" class="btn btn-outline-secondary" id="button-addon2">New Student</button>
   </form>
     <script type="module" src="js/script.js"></script>
     <script type="module" src="js/api.js"></script>
