@@ -1,0 +1,15 @@
+{
+  "name": "27hm",
+  "version": "1.0.0",
+  "description": "27 homework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vlad",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.1",
+    "sass": "^1.54.9"
+  }
+}
