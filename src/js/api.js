@@ -7,7 +7,7 @@ export const studentsAPI = {
         return response
     },
     async updateStudentMark (marks, id) {
-        let request = await fetch(baseUrl + 'students/' + id, {
+        await fetch(baseUrl + 'students/' + id, {
             method: "PUT",
             headers: {
                 'Content-type': 'application/json; charset=UTF-8' 
@@ -16,7 +16,7 @@ export const studentsAPI = {
         }) 
     },
     async postStudent (student) {
-        let request = await fetch(baseUrl + 'students', {
+        await fetch(baseUrl + 'students', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8' 
@@ -31,7 +31,7 @@ export const studentsAPI = {
     },
 
     async deleteStudent (id) {
-        let request = await fetch( baseUrl + 'students/' + id , {
+        await fetch( baseUrl + 'students/' + id , {
             method: 'DELETE',
             headers: {
                 'Content-type': 'application/json; charset=UTF-8' 

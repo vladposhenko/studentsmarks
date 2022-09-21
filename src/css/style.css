@@ -10797,4 +10797,6 @@ form {
   width: 500px !important;
 }
 
-/*# sourceMappingURL=style.css.map */
+.test {
+  text-align: center;
+}
