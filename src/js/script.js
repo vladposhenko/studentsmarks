@@ -45,10 +45,21 @@ const getStudentsTable = async () => {
 
 studentForm.addEventListener('submit', async (e) => {
    e.preventDefault()
-   await studentsAPI.postStudent(student.value);
-   await getStudentsTable()
+   let checkedStudent = await checkStudent(student.value)
+   console.log(checkedStudent);
+   if(!checkedStudent) {
+      await studentsAPI.postStudent(student.value);
+      await getStudentsTable()
+   } else {
+      alert('This student already exist!')
+   }
 })
 
+async function checkStudent (name) {
+   let students = await studentsAPI.getStudents()
+   let filteredStudents =  students.some((st) => st.name === name)
+   return filteredStudents
+}
 
 
 getStudentsTable()
