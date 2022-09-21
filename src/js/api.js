@@ -32,10 +32,7 @@ export const studentsAPI = {
 
     async deleteStudent (id) {
         await fetch( baseUrl + 'students/' + id , {
-            method: 'DELETE',
-            headers: {
-                'Content-type': 'application/json; charset=UTF-8' 
-            }
+            method: 'DELETE'
         })
     }
 }

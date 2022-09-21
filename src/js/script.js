@@ -12,7 +12,6 @@ const getStudentsTable = async () => {
       const tr = document.createElement('tr')
       const th = document.createElement('th')
       const img = document.createElement('img')
-      const button = document.createElement('button')
       img.src = "img/x-circle.svg"
       img.classList.add('delete__student')
       th.classList.add('student__name')
